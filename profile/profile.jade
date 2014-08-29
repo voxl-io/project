@@ -1,2 +1,5 @@
 template(name='profile')
-  h1 hi, user, here's ur self
+  unless no_user
+    h1 hi, #{profile.name}, on GitHub you are known as #{github.username} and your email is #{github.email}. isn't that cool?
+  else
+    h1 wut

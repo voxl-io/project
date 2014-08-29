@@ -13,7 +13,8 @@ blaze@1.0.3
 callback-hook@1.0.0
 check@1.0.0
 coffeescript@1.0.2
-cryptoquick:stylus-multi@0.0.5
+cryptoquick:jade@0.2.6
+cryptoquick:stylus-multi@0.0.6
 ctl-helper@1.0.2
 ctl@1.0.0
 deps@1.0.1
@@ -66,5 +67,4 @@ standard-app-packages@1.0.0
 templating@1.0.4
 ui@1.0.0
 underscore@1.0.0
-waitingkuo:jade@0.2.6
 webapp@1.0.2

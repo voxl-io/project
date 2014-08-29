@@ -5,8 +5,11 @@ class @ProfileController extends RouteController
     AccountsEntry.signInRequired @
 
   data: ->
-    title: 'Hello World'
+    user = Meteor.user()
 
-  run: ->
-    console.log 'running'
-    super
+    if user
+      profile: user.profile
+      github: user.services.github
+      no_user: no
+    else
+      no_user: yes

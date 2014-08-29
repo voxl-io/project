@@ -6,12 +6,12 @@
 standard-app-packages
 autopublish
 insecure
-cryptoquick:stylus-multi
 coffeescript
-waitingkuo:jade
+cryptoquick:jade
 github
 iron:router
 accounts-github
 joshowens:accounts-entry
 accounts-ui
+cryptoquick:stylus-multi
 
