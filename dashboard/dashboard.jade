@@ -3,7 +3,8 @@ template(name='dashboard')
 
   dl
     each projects
-      dt name: #{name}
+      a(href="{{pathFor 'projectView' name}}")
+        dt name: #{name}
       dd pitch: #{pitch}
       hr
 

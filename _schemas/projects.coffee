@@ -4,6 +4,8 @@ Project = new SimpleSchema
   name:
     type: String
     label: 'Name'
+    index: yes
+    unique: yes
   pitch:
     type: String
     label: 'Elevator Pitch'

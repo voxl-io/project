@@ -1,2 +1,15 @@
 template(name='project_view')
   h1 yo project is called #{project.name}
+
+  p #{project.pitch}
+
+  dl
+    each issues
+      //- a(href="{{pathFor 'projectView' name}}")
+      dt name: #{name}
+      dd description: #{description}
+      hr
+
+  h1 add an issue
+
+  +quickForm(collection='Issues' id='new-issue-form' type='insert')

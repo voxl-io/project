@@ -4,3 +4,5 @@ template(name='header')
     a(href="{{pathFor 'dashboard'}}") dashboard
     a(href="{{pathFor 'profile'}}") profile
     a(href="{{pathFor 'about'}}") about
+    if signedIn
+      a(href="/sign-out") sign out

@@ -8,6 +8,6 @@ if Meteor.isClient
 
   AccountsEntry.config
     homeRoute: 'about'
-    dashboardRoute: 'dashboard'
-    profileRoute: 'profile'
+    dashboardRoute: '/'
+    profileRoute: '/profile'
     language: 'en'

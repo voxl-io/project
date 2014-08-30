@@ -3,7 +3,18 @@ class @ProjectViewController extends RouteController
 
   onBeforeAction: ->
     AccountsEntry.signInRequired @
+    Session.set 'project-name', @params.name
+
+  unload: ->
+    Session.set 'project-name', null
+
+  waitOn: -> [
+    Meteor.subscribe 'my-projects'
+    Meteor.subscribe 'project-issues', @params.name
+  ]
 
   data: ->
-    project:
-      name: 'hi'
+    project: Projects.findOne
+      name: @params.name
+    issues: Issues.find
+      projectName: @params.name
