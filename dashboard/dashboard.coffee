@@ -5,7 +5,7 @@ class @DashboardController extends RouteController
     AccountsEntry.signInRequired @
 
   waitOn: ->
-    Meteor.subscribe 'projects'
+    Meteor.subscribe 'my-projects'
 
   data: ->
-    projects: Projects.find({})
+    projects: Projects.find()

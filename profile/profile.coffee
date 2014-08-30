@@ -9,7 +9,7 @@ class @ProfileController extends RouteController
 
     if user
       profile: user.profile
-      github: user.services.github
+      github: user.services?.github
       no_user: no
     else
       no_user: yes

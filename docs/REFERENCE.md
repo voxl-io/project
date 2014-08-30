@@ -9,3 +9,5 @@
 - [Stylus Multi](https://github.com/furrio/meteor-stylus-multi)
 - [Collection2](https://github.com/aldeed/meteor-collection2)
 - [AutoForm](https://github.com/aldeed/meteor-autoform)
+- [Iron Router Progress](https://github.com/Multiply/iron-router-progress/)
+- [Meteor Roles](https://github.com/alanning/meteor-roles/)

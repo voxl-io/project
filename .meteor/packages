@@ -4,8 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
-insecure
 coffeescript
 cryptoquick:jade
 github
@@ -17,4 +15,6 @@ cryptoquick:stylus-multi
 mrt:underscore-string-latest
 aldeed:collection2
 aldeed:autoform
+alanning:roles
+mrt:iron-router-progress
 
