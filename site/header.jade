@@ -1,2 +1,6 @@
 template(name='header')
-  h1 welcome to project
+  h1 project
+  nav
+    a(href="{{pathFor 'dashboard'}}") dashboard
+    a(href="{{pathFor 'profile'}}") profile
+    a(href="{{pathFor 'about'}}") about
