@@ -1,2 +1,13 @@
 template(name='dashboard')
+  nav
+    //- a(href="{{pathFor 'project/new'}}")
+    //- a(href="{{pathFor 'issue/new'}}")
   h1 hi, user, here's ur things
+
+  each projects
+    div= name
+    div= pitch
+
+  h1 make a new project
+
+  +quickForm(collection="Projects" id="new-project-form" type="insert")

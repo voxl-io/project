@@ -4,9 +4,8 @@ class @DashboardController extends RouteController
   onBeforeAction: ->
     AccountsEntry.signInRequired @
 
-  data: ->
-    title: 'Hello World'
+  waitOn: ->
+    Meteor.subscribe 'projects'
 
-  run: ->
-    console.log 'running'
-    super
+  data: ->
+    projects: Projects.find({})

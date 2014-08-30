@@ -9,6 +9,9 @@ Router.map ->
   @route 'dashboard',
     path: '/'
 
+  @route 'projectView',
+    path: '/project/:name'
+
   @route 'notFound',
     path: '*'
     where: 'server'
